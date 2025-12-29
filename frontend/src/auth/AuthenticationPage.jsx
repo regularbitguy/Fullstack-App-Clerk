@@ -1,17 +1,16 @@
 import 'react'
-import { SignIn, SignUp, SignedIn, SignedOut } from '@clerk/clerk-react'
+import { SignIn, SignUp, SignedIn, SignedOut } from "@clerk/clerk-react"
 
 export function AuthenticationPage() {
-    return <div className='auth/container'>
+    return <div className="auth-container">
         <SignedOut>
             <SignIn routing ="path" path ="/sign-in"/>
-            <SignIn routing ="path" path ="/sign-up"/>
+            <SignUp routing ="path" path ="/sign-up"/>
         </SignedOut>
         <SignedIn>
-            <div className='redirect-message'>
+            <div className="redirect-message">
                 <p>You are already signed in. Please navigate to the app.</p>
             </div>
-
         </SignedIn>
     </div>
 }
