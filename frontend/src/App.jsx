@@ -19,6 +19,4 @@ function App() {
   </ClerkProviderWithRoutes>
 }
 
-
-
 export default App

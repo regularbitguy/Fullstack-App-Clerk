@@ -9,7 +9,8 @@ export function AuthenticationPage() {
         </SignedOut>
         <SignedIn>
             <div className="redirect-message">
-                <p>You are already signed in. Please navigate to the app.</p>
+                <p>Se ha autenticado un inicio de sesión activo</p>
+                <p>Por favor redirígete hacia otra pestaña.</p>
             </div>
         </SignedIn>
     </div>
